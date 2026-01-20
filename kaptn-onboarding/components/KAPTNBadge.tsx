@@ -139,16 +139,16 @@ export default function KAPTNBadge({ size = 200, animate = false }: KAPTNBadgePr
           opacity="0.9"
         />
 
-        {/* Four corner stars representing navigation - positioned on circle */}
+        {/* Four corner stars - aligned with text curves on 60-radius circle */}
         <g opacity="0.6">
-          {/* Upper left star at ~33, 26 */}
-          <path d="M 33 26 L 35 31 L 40 31 L 36 34 L 38 39 L 33 36 L 28 39 L 30 34 L 26 31 L 31 31 Z" fill="#FFD700" />
-          {/* Upper right star at ~167, 26 */}
-          <path d="M 167 26 L 169 31 L 174 31 L 170 34 L 172 39 L 167 36 L 162 39 L 164 34 L 160 31 L 165 31 Z" fill="#FFD700" />
-          {/* Lower left star at ~33, 160 */}
-          <path d="M 33 160 L 35 165 L 40 165 L 36 168 L 38 173 L 33 170 L 28 173 L 30 168 L 26 165 L 31 165 Z" fill="#FFD700" />
-          {/* Lower right star at ~167, 160 */}
-          <path d="M 167 160 L 169 165 L 174 165 L 170 168 L 172 173 L 167 170 L 162 173 L 164 168 L 160 165 L 165 165 Z" fill="#FFD700" />
+          {/* Upper left star - aligned with KAPTN curve */}
+          <path d="M 58 58 L 60 63 L 65 63 L 61 66 L 63 71 L 58 68 L 53 71 L 55 66 L 51 63 L 56 63 Z" fill="#FFD700" />
+          {/* Upper right star - aligned with KAPTN curve */}
+          <path d="M 142 58 L 144 63 L 149 63 L 145 66 L 147 71 L 142 68 L 137 71 L 139 66 L 135 63 L 140 63 Z" fill="#FFD700" />
+          {/* Lower left star - aligned with BRIDGE SYSTEM curve */}
+          <path d="M 58 142 L 60 147 L 65 147 L 61 150 L 63 155 L 58 152 L 53 155 L 55 150 L 51 147 L 56 147 Z" fill="#FFD700" />
+          {/* Lower right star - aligned with BRIDGE SYSTEM curve */}
+          <path d="M 142 142 L 144 147 L 149 147 L 145 150 L 147 155 L 142 152 L 137 155 L 139 150 L 135 147 L 140 147 Z" fill="#FFD700" />
         </g>
 
         {/* Outer glow effect */}

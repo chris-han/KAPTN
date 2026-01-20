@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import KAPTNBadge from "./KAPTNBadge";
 
 interface WelcomeProps {
   onAssumeCommand: () => void;
@@ -164,8 +163,17 @@ export default function Welcome({ onAssumeCommand, onRestart, captainName }: Wel
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                className="flex justify-center"
               >
-                <KAPTNBadge size={240} animate={true} />
+                <motion.img
+                  src="/kaptn-badge.svg"
+                  alt="KAPTN Bridge Ensignia"
+                  width={240}
+                  height={240}
+                  initial={{ scale: 0, rotate: -180 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{ duration: 1.2, type: "spring", stiffness: 100 }}
+                />
               </motion.div>
 
               <motion.div
@@ -183,7 +191,7 @@ export default function Welcome({ onAssumeCommand, onRestart, captainName }: Wel
                   </p>
                 )}
                 <p className="text-sm font-inter text-white/50 max-w-md mx-auto leading-relaxed">
-                  The double-diamond: Navigate the unknown through Knowledge, Action, Prioritize, Thesis, Navigation.
+                  The double-diamond: Navigate the unknown through Knowledge, Action, Priority, Thesis, Navigation.
                 </p>
                 {/* <p className="text-sm font-mono text-bridge-gold/60 uppercase tracking-wider">
                   Design Thinking • Command Protocol
